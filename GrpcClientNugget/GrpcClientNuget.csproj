@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<IsPackable>true</IsPackable>
+		<PackageId>Greeter.Client</PackageId>
+		<Version>0.1.6</Version>
+		<Authors>Vaazch</Authors>
+		<Company>None</Company>
+		<PackageDescription>This package adds an GreeterClient</PackageDescription>
+		<PackageTags>Grpc;</PackageTags>
+		<RepositoryUrl>https://github.com/Vaazch/nugetRegistry</RepositoryUrl>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Grpc.AspNetCore" Version="2.39.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Protobuf Include="Protos\greeter.proto" GrpcServices="Client" />
+	</ItemGroup>
+
+
+</Project>
+
+
+
