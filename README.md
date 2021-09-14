@@ -3,13 +3,13 @@
 
 ## `Background`
 
-This is a POC - *Proof Of Concept* - born from the need of having a package of all the code need for the set up of a GRPC client.
+This is a POC - *Proof Of Concept* - born from the need of having a package of all the code needed to set up a GRPC client.
 
-Since when working with grpc in a MicroServices environment theres the need to keep up with all the protofile generated and all the clients need to make in between MicroServices GRPC communication, I took the nuget approach to simplify this maintenance.
+Since when working with grpc in a MicroServices environment theres the need to keep up with all the protofile generated and all the clients needed to make in between MicroServices GRPC communication, I took the nuget approach to simplify this maintenance.
 
-My plan is to build a nuget with every method for all rpc calls that a single proto file supports. 
+My plan is to build a nuget with every method for all rpc calls that a single protofile supports. 
 
-**With this I can simply add this nugget file to any Service and make it communicate with another without the need to rewrite the grpc client code over and over again**.
+**With this I can simply add this nugget to any Service and make it communicate with another without the need to rewrite the grpc client code over and over again**.
 
 
 ## `Future plans` 
@@ -27,6 +27,6 @@ Since this is a simple POC there's still much to be done.
 
  # `Important`
 
- This project was made with .Net 6 and Visual Studio 2022 Preview and since it is still in is development stages a bug where the HotReload Feature ws generating errors while the GrpcServer was returning the Reply.
+ This project was made with .Net 6 and Visual Studio 2022 Preview and since it is still in its development stages, there is a bug where the HotReload Feature was generating errors while the GrpcServer was returning the Reply.
 
  To solve this error simply deactivate Css HotReaload Feature in VS.
